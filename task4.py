@@ -9,7 +9,7 @@ import types
 def flat_generator(list_of_elements):
     for element in list_of_elements:
         if isinstance(element, list):
-            flat_generator(list(element))
+            flat_generator(element)
         else:
             yield element
 
